@@ -24,7 +24,7 @@ resource "aws_instance" "web_node" {
   ami = "ami-096f46d460613bed4"
   instance_type = "t3.micro"
   tags = {
-    "name" = "Web Node"
+    "Name" = "Web Node"
   }
 }
 
@@ -33,7 +33,7 @@ resource "aws_instance" "app_node" {
   ami = "ami-096f46d460613bed4"
   instance_type = "t3.micro"
   tags = {
-    "name" = "App Node"
+    "Name" = "App Node"
   }
 }
 
@@ -42,7 +42,7 @@ resource "aws_instance" "ansible_node" {
   ami = "ami-096f46d460613bed4"
   instance_type = "t3.micro"
   tags = {
-    "name" = "Ansible Node"
+    "Name" = "Ansible Node"
   }
 }
 
