@@ -23,6 +23,8 @@ provider "aws" {
 resource "aws_instance" "web_node" {
   ami = "ami-096f46d460613bed4"
   instance_type = "t3.micro"
+  key_name = "mickey" 
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
   tags = {
     "Name" = "Web Node"
   }
@@ -32,6 +34,8 @@ resource "aws_instance" "web_node" {
 resource "aws_instance" "app_node" {
   ami = "ami-096f46d460613bed4"
   instance_type = "t3.micro"
+  key_name = "mickey" 
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
   tags = {
     "Name" = "App Node"
   }
@@ -41,6 +45,8 @@ resource "aws_instance" "app_node" {
 resource "aws_instance" "ansible_node" {
   ami = "ami-096f46d460613bed4"
   instance_type = "t3.micro"
+  key_name = "mickey" 
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
   tags = {
     "Name" = "Ansible Node"
   }
