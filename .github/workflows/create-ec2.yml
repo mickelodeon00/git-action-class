@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Show Artifart
-        uses: ls -ltra
+        run: ls -ltra
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
