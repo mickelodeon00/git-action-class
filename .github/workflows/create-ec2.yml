@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push: 
     branches:
-      - main
+      - week10
 
 
 
@@ -49,6 +49,6 @@ jobs:
         working-directory: terraform
         run: terraform plan
 
-      - name: Terraform destroy 
-        working-directory: terraform
-        run: terraform destroy -auto-approve
+      # - name: Terraform destroy 
+      #   working-directory: terraform
+      #   run: terraform destroy -auto-approve
