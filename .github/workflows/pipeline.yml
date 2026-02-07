@@ -18,8 +18,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Listout
+      - name: Pass Secrets and show Artifarts
         run: |
           pwd
           ls -ltra
           ansible --version
+          echo "{{ secrets.EC2_SSH_PRIVATE_KEY }}" > /tmp/key.pem
+          chmod 400 /tmp/key.pem
