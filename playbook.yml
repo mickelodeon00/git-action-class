@@ -1,0 +1,25 @@
+---
+- name: Java
+  hosts: java
+  become: true
+  tasks:
+    - name: Install java
+      yum:
+        name: java-17-openjdk
+        state: present
+
+
+- name: Nginx
+  hosts: nginx
+  become: true
+  tasks:
+    - name: Install Nginx
+      yum:
+        name: nginx
+        state: present
+
+
+    - name: Start Nginx
+      service:
+        name: nginx
+        state: started

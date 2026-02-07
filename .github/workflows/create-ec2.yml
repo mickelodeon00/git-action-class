@@ -7,7 +7,9 @@ on:
   push: 
     branches:
       - week10
-
+    paths:
+      - 'terraform/**'
+      # - '.github/workflows/create-ec2.yml'
 
 
 jobs:
