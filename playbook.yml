@@ -19,7 +19,7 @@
         state: present
 
 
-    - name: Start Nginx
-      service:
-        name: nginx
-        state: started
+    # - name: Start Nginx
+    #   service:
+    #     name: nginx
+    #     state: started
