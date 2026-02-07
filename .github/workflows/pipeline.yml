@@ -25,7 +25,7 @@ jobs:
           chmod 400 /tmp/key.pem
 
 
-      - name: Check Playbook (Dry Run)
+      - name: Check Playbook (Apply)
         run: |
-          ansible-playbook -C -vv playbook.yml
+          ansible-playbook playbook.yml
 
