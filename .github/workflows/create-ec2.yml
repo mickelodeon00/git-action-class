@@ -45,9 +45,9 @@ jobs:
         working-directory: terraform
         run: terraform validate
 
-      - name: Terraform plan 
+      - name: Terraform apply 
         working-directory: terraform
-        run: terraform plan
+        run: terraform apply
 
       # - name: Terraform destroy 
       #   working-directory: terraform
