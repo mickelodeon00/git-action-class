@@ -5,7 +5,7 @@
   tasks:
     - name: Install java
       yum:
-        name: java-17-openjdk
+        name: java-17-amazon-corretto
         state: present
 
 
