@@ -9,7 +9,7 @@ on:
       - week10
     paths:
       - 'terraform/**'
-      # - '.github/workflows/create-ec2.yml'
+      - '.github/workflows/create-ec2.yml'
 
 
 jobs:
@@ -51,6 +51,6 @@ jobs:
         working-directory: terraform
         run: terraform plan -out=tfplan
 
-      - name: Terraform apply 
+      - name: Terraform destroy 
         working-directory: terraform
-        run: terraform apply tfplan
+        run: terraform destroy tfplan

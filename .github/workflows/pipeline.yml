@@ -6,6 +6,10 @@ on:
   push: 
     branches:
       - week10
+    paths:
+      - 'inventories/**'
+      - 'playbook.yml'
+      - 'ansible.cfg'
 
 
 
